@@ -10,7 +10,7 @@ Alibaba AnyProxy < 4.0.10
 
 ## 网络测绘
 
-"anyprox
+"anyprox"
 
 ## POC
 
@@ -19,3 +19,5 @@ Alibaba AnyProxy < 4.0.10
 ```
 
 ## 扫描结果
+![YLWQ3XCYVVPMV8WPG1~XBL4](https://github.com/a1665454764/AlibabaAnyProxyfetchBody/assets/143511005/c05e168e-2af8-49e3-9321-2b8797af8786)
+![ATBI(@757XQER%UHM6HM}_E](https://github.com/a1665454764/AlibabaAnyProxyfetchBody/assets/143511005/e5aadfc7-600d-4b9a-8024-2b77d85393a0)
